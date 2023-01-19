@@ -1,1 +1,2 @@
-web:  python manage.py migrate && python manage.py collectstatic  && gunicorn project.wsgi
+web:  python manage.py migrate   && gunicorn project.wsgi
+&& python manage.py collectstatic
